@@ -1,0 +1,8 @@
+# SEO: Robots.txt for NATROMECH Infrasolutions
+# Allows all search engines to crawl the website
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update domain when deploying)
+Sitemap: https://yourdomain.com/sitemap.xml

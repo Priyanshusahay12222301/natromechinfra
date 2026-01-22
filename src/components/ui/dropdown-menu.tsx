@@ -1,0 +1,26 @@
+import * as React from "react";
+
+export const DropdownMenu = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const DropdownMenuTrigger = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>((props, ref) => <button ref={ref} {...props} />);
+DropdownMenuTrigger.displayName = "DropdownMenuTrigger";
+export const DropdownMenuGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const DropdownMenuPortal = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const DropdownMenuSub = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const DropdownMenuRadioGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const DropdownMenuSubTrigger = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuSubTrigger.displayName = "DropdownMenuSubTrigger";
+export const DropdownMenuSubContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuSubContent.displayName = "DropdownMenuSubContent";
+export const DropdownMenuContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuContent.displayName = "DropdownMenuContent";
+export const DropdownMenuItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuItem.displayName = "DropdownMenuItem";
+export const DropdownMenuCheckboxItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuCheckboxItem.displayName = "DropdownMenuCheckboxItem";
+export const DropdownMenuRadioItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuRadioItem.displayName = "DropdownMenuRadioItem";
+export const DropdownMenuLabel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuLabel.displayName = "DropdownMenuLabel";
+export const DropdownMenuSeparator = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+DropdownMenuSeparator.displayName = "DropdownMenuSeparator";
+export const DropdownMenuShortcut = ({ children, ...props }: React.HTMLAttributes<HTMLSpanElement>) => <span {...props}>{children}</span>;

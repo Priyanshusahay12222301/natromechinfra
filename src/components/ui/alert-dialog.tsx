@@ -1,0 +1,20 @@
+import * as React from "react";
+
+export const AlertDialog = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const AlertDialogPortal = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const AlertDialogOverlay = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+AlertDialogOverlay.displayName = "AlertDialogOverlay";
+export const AlertDialogTrigger = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>((props, ref) => <button ref={ref} {...props} />);
+AlertDialogTrigger.displayName = "AlertDialogTrigger";
+export const AlertDialogContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+AlertDialogContent.displayName = "AlertDialogContent";
+export const AlertDialogHeader = ({ children, ...props }: React.HTMLAttributes<HTMLDivElement>) => <div {...props}>{children}</div>;
+export const AlertDialogFooter = ({ children, ...props }: React.HTMLAttributes<HTMLDivElement>) => <div {...props}>{children}</div>;
+export const AlertDialogTitle = React.forwardRef<HTMLHeadingElement, React.HTMLAttributes<HTMLHeadingElement>>((props, ref) => <h2 ref={ref} {...props} />);
+AlertDialogTitle.displayName = "AlertDialogTitle";
+export const AlertDialogDescription = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLParagraphElement>>((props, ref) => <p ref={ref} {...props} />);
+AlertDialogDescription.displayName = "AlertDialogDescription";
+export const AlertDialogAction = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>((props, ref) => <button ref={ref} {...props} />);
+AlertDialogAction.displayName = "AlertDialogAction";
+export const AlertDialogCancel = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>((props, ref) => <button ref={ref} {...props} />);
+AlertDialogCancel.displayName = "AlertDialogCancel";

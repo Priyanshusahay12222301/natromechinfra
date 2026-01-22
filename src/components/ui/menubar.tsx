@@ -1,0 +1,28 @@
+import * as React from "react";
+
+export const Menubar = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+Menubar.displayName = "Menubar";
+export const MenubarMenu = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const MenubarTrigger = React.forwardRef<HTMLButtonElement, React.ButtonHTMLAttributes<HTMLButtonElement>>((props, ref) => <button ref={ref} {...props} />);
+MenubarTrigger.displayName = "MenubarTrigger";
+export const MenubarContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarContent.displayName = "MenubarContent";
+export const MenubarItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarItem.displayName = "MenubarItem";
+export const MenubarSeparator = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarSeparator.displayName = "MenubarSeparator";
+export const MenubarLabel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarLabel.displayName = "MenubarLabel";
+export const MenubarCheckboxItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarCheckboxItem.displayName = "MenubarCheckboxItem";
+export const MenubarRadioGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const MenubarRadioItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarRadioItem.displayName = "MenubarRadioItem";
+export const MenubarPortal = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const MenubarSubContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarSubContent.displayName = "MenubarSubContent";
+export const MenubarSubTrigger = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+MenubarSubTrigger.displayName = "MenubarSubTrigger";
+export const MenubarGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const MenubarSub = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const MenubarShortcut = ({ children, ...props }: React.HTMLAttributes<HTMLSpanElement>) => <span {...props}>{children}</span>;

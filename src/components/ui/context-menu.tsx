@@ -1,0 +1,25 @@
+import * as React from "react";
+
+export const ContextMenu = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const ContextMenuTrigger = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const ContextMenuContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuContent.displayName = "ContextMenuContent";
+export const ContextMenuItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuItem.displayName = "ContextMenuItem";
+export const ContextMenuCheckboxItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuCheckboxItem.displayName = "ContextMenuCheckboxItem";
+export const ContextMenuRadioItem = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuRadioItem.displayName = "ContextMenuRadioItem";
+export const ContextMenuLabel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuLabel.displayName = "ContextMenuLabel";
+export const ContextMenuSeparator = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuSeparator.displayName = "ContextMenuSeparator";
+export const ContextMenuShortcut = ({ children, ...props }: React.HTMLAttributes<HTMLSpanElement>) => <span {...props}>{children}</span>;
+export const ContextMenuGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const ContextMenuPortal = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const ContextMenuSub = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
+export const ContextMenuSubContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuSubContent.displayName = "ContextMenuSubContent";
+export const ContextMenuSubTrigger = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((props, ref) => <div ref={ref} {...props} />);
+ContextMenuSubTrigger.displayName = "ContextMenuSubTrigger";
+export const ContextMenuRadioGroup = ({ children }: { children?: React.ReactNode }) => <>{children}</>;
